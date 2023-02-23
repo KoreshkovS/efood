@@ -1,0 +1,122 @@
+.header {
+  margin-top: 20px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.menu-button {
+  display: none;
+  @media screen and (max-width: 767.98px) {
+    display: flex;
+  }
+}
+.mobile-menu-icon {
+}
+.icon-cross {
+  display: none;
+  .menu-button.is-open & {
+    display: block;
+  }
+}
+.icon-menu {
+  .menu-button.is-open & {
+    display: none;
+  }
+}
+.header__logo {
+}
+.menu-container {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: inherit;
+    padding-bottom: 20px;
+    &.is-open {
+      display: flex;
+    }
+  }
+}
+.navigation {
+  width: 100%;
+}
+.navigation__list {
+  display: flex;
+  gap: 60px;
+
+  @media screen and (max-width: 967.98px) {
+    gap: 20px;
+  }
+  @media screen and (max-width: 767.98px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+  }
+}
+.navigation__item {
+}
+.navigation__link {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  transition: color 250ms ease;
+  &:hover,
+  &:focus {
+    color: $hoverColor;
+  }
+  @media screen and (max-width: 767.98px) {
+    background-color: #ffffff;
+  }
+}
+.active {
+  &.navigation__link {
+    color: $hoverColor;
+  }
+}
+.header__sign {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @media screen and (max-width: 479.98px) {
+    gap: 10px;
+  }
+}
+.header__magnifier,
+.header__cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  @media screen and (max-width: 479.98px) {
+    width: 20px;
+  }
+}
+
+.magnifier__icon,
+.cart__icon {
+  width: 24px;
+  height: 24px;
+  stroke: $blackColor;
+  transition: stroke 250ms ease;
+}
+.magnifier__icon {
+  .header__magnifier:hover &,
+  .header__magnifier:focus & {
+    stroke: $hoverColor;
+  }
+}
+.cart__icon {
+  .header__cart:hover &,
+  .header__cart:focus & {
+    stroke: $hoverColor;
+  }
+}
+
+.header__button {
+}
