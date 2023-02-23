@@ -4,12 +4,18 @@ body {
   font-size: 20px;
   line-height: 1.5; /* 30/20 */
   color: $blackColor;
-  background: linear-gradient(
+  background-color: linear-gradient(
     113.59deg,
     rgba(239, 239, 239, 0) -2.01%,
     rgba(239, 239, 239, 0.2) 103.74%
   );
   backdrop-filter: blur(388.5px);
+  @media screen and (max-width: 767.98px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 479.98px) {
+     font-size: 16px;
+  }
 }
 [class*="__container"] {
   max-width: 1261px;
@@ -19,7 +25,9 @@ body {
 [class*="__title"] {
   font-weight: 500;
 }
-
+.acсent {
+  color: #ff7a50;
+}
 .logo {
   font-weight: 500;
   font-size: 33px;

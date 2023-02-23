@@ -1,0 +1,108 @@
+.hero {
+  margin-top: 100px;
+  @media screen and (max-width: 1023.98px) {
+    margin-top: 50px;
+  }
+  @media screen and (max-width: 479.98px) {
+    margin-top: 25px;
+  }
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  @media screen and (max-width: 767.98px) {
+    flex-direction: column;
+  }
+}
+.hero__content {
+  max-width: 515px;
+  @media screen and (max-width: 767.98px) {
+    max-width: 100%;
+  }
+}
+.hero__title {
+  font-size: 66px;
+  line-height: 1.18; /* 78/66 */
+  text-transform: capitalize;
+
+  margin-bottom: 20px;
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+    font-size: 50px;
+  }
+  @media screen and (max-width: 479.98px) {
+    font-size: 40px;
+  }
+}
+.hero__text {
+  text-transform: capitalize;
+
+  margin-bottom: 45px;
+
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  @media screen and (max-width: 479.98px) {
+    margin-bottom: 20px;
+  }
+}
+.hero__buttons {
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+  }
+}
+.hero__button {
+  margin-right: 30px;
+}
+.hero__link {
+  line-height: 1.2; /* 24/20 */
+
+  text-decoration-line: underline;
+
+  transition: color 250ms ease;
+
+  &:hover,
+  &:focus {
+    color: $hoverColor;
+  }
+}
+.hero__media {
+  max-width: 690px;
+  position: relative;
+}
+.hero__image {
+  width: 100%;
+}
+.hero__call {
+  position: absolute;
+  top: 14%; /* 125/690 */
+  left: 18%; /* 121/690 */
+  width: 25%; /* 178/690 */
+}
+.hero__magnifier {
+  position: absolute;
+  top: 0;
+  left: 34%; /* 240/690 */
+  width: 10%; /* 72/690 */
+}
+.hero__time {
+  position: absolute;
+  top: 2%; /* 11/690 */
+  right: 9%; /* 65/690 */
+  width: 10%; /* 73/690 */
+}
+.hero__arrow {
+  position: absolute;
+  top: 6%; /* 47/690 */
+  right: 5%; /* 34/690 */
+  width: 21%; /* 149/690 */
+}
+.herro__sandwich {
+  position: absolute;
+  top: 38%;
+  right: 0;
+  width: 33%; /* 230/690 */
+}
