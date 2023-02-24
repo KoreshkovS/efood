@@ -51,9 +51,9 @@
 }
 .download__bottom {
   @media screen and (max-width: 1023.98px) {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   @media screen and (max-width: 479.98px) {
     flex-direction: column;
@@ -74,14 +74,15 @@
   max-width: 215px;
   margin-right: 200px;
   @media screen and (max-width: 1199.98px) {
-    margin-right: 150px;
+    margin-right: 160px;
+    max-width: 180px;
   }
   @media screen and (max-width: 1023.98px) {
     margin-right: 0;
+    max-width: 215px;
   }
   @media screen and (max-width: 767.98px) {
     display: none;
-    
   }
 }
 .download__left {
