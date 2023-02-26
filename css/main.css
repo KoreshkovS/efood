@@ -1322,7 +1322,64 @@ body {
   }
 }
 
-.footer__top {
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 767.98px) {
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.address {
+  margin-top: 29px;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.address__link {
+  font-size: 16px;
+  line-height: 2; /* 32/16 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 250ms ease;
+  transition: color 250ms ease;
+}
+.address__link:hover, .address__link:focus {
+  color: #ff6838;
+}
+
+.address__icon {
+  margin-right: 10px;
+}
+
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1332,9 +1389,138 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 100px;
+  gap: 15px;
 }
 
-.address {
-  font-style: normal;
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #eeeeef;
+  border-radius: 50%;
+  -webkit-transition: background-color 250ms ease;
+  transition: background-color 250ms ease;
+}
+.social__link:hover, .social__link:focus {
+  background-color: #dbdbde;
+}
+
+.social__icon {
+  fill: #363853;
+  -webkit-transition: fill 250ms ease;
+  transition: fill 250ms ease;
+}
+.social__link:hover .social__icon, .social__link:focus .social__icon {
+  fill: #ff6838;
+}
+
+.footer__title {
+  font-size: 18px;
+  line-height: 2.72; /* 49/18 */
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+}
+
+.footer__item {
+  -webkit-transition: color 250ms ease;
+  transition: color 250ms ease;
+}
+.footer__item:hover, .footer__item:focus {
+  color: #ff6838;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.01em;
+}
+@media screen and (max-width: 479.98px) {
+  .footer__link {
+    font-size: 16px;
+  }
+}
+
+.copy {
+  border-top: 1px solid #969696;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+@media screen and (max-width: 479.98px) {
+  .copy {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+.copy__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copy__text {
+  font-size: 14px;
+  line-height: 1;
+  color: #646464;
+}
+@media screen and (max-width: 479.98px) {
+  .copy__text {
+    font-size: 12px;
+  }
+}
+
+.copy__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+@media screen and (max-width: 767.98px) {
+  .copy__list {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .copy__list {
+    gap: 10px;
+  }
+}
+
+.copy__link {
+  font-size: 14px;
+  line-height: 1;
+  color: #646464;
+  -webkit-transition: color 250ms ease;
+  transition: color 250ms ease;
+}
+.copy__link:hover, .copy__link:focus {
+  color: #ff6838;
+}
+@media screen and (max-width: 479.98px) {
+  .copy__link {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
